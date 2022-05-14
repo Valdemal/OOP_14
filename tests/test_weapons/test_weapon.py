@@ -1,7 +1,7 @@
 import copy
 
 from tests.conftest import SomeWeapon
-from weapon import Weapon
+from weapons.weapon import Weapon
 from pytest import raises
 
 

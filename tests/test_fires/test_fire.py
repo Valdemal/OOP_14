@@ -1,6 +1,6 @@
 from pytest import raises
 
-from fire import Fire
+from fires.fire import Fire
 from tests.conftest import SomeFire
 
 

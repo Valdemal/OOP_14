@@ -1,8 +1,9 @@
 from pytest import fixture
 
-from fire import Fire
+from fires.fire import Fire
+from recharges.distance_recharge import DistanceRecharge
 from target import Target
-from weapon import Weapon
+from weapons.weapon import Weapon
 
 
 class SomeFire(Fire):
@@ -19,6 +20,7 @@ class SomeWeapon(Weapon):
     def __init__(self, name):
         super().__init__(name)
         self.set_fire(SomeFire(50))
+        self.set_recharge(DistanceRecharge(5, 30, 30))
 
     def type(self) -> str:
         return "Some type"
